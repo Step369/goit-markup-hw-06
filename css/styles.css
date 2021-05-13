@@ -419,7 +419,6 @@ ul {
 .checkbox-link {
   text-decoration-line: underline;
   color: var(--accent-text-color);
-  margin-bottom: 30px;
 }
 
 .modal-form-group textarea {
@@ -432,6 +431,7 @@ ul {
 }
 
 .checkbox-lable {
+  margin-bottom: 30px;
 }
 
 .checkbox-lable::before {
