@@ -385,6 +385,9 @@ ul {
 }
 
 .modal-form-label {
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
   margin-bottom: 4px;
 }
 
@@ -419,6 +422,7 @@ ul {
 .checkbox-link {
   text-decoration-line: underline;
   color: var(--accent-text-color);
+  margin-left: 3px;
 }
 
 .modal-form-group textarea {
@@ -431,17 +435,23 @@ ul {
 }
 
 .checkbox-lable {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 30px;
+  margin-left: 13px;
 }
 
 .checkbox-lable::before {
+  position: absolute;
   content: "";
   display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-text-color);
   border-radius: 3px;
-  margin-right: 7px;
+  margin-left: -13px;
   transition-property: border-color, background-color, background-image;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
