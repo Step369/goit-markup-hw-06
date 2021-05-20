@@ -292,6 +292,7 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   background-color: var(--alt-text-color);
@@ -346,7 +347,6 @@ ul {
   line-height: 1.15;
   text-align: center;
   color: var(--title-text-color);
-  margin-top: 40px;
   margin-bottom: 12px;
 }
 
@@ -354,8 +354,6 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .modal-form-group {
@@ -472,7 +470,6 @@ ul {
 }
 
 .modal-form-button {
-  margin-bottom: 40px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -486,7 +483,6 @@ ul {
 /* Advantages section */
 
 .advantages-title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -503,6 +499,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--alt-background-color);
+  margin-bottom: 30px;
 }
 
 .antenna-icons::before {
@@ -662,6 +659,7 @@ ul {
 .regular-customers-icons-link:hover,
 .regular-customers-icons-link:focus {
   border-color: var(--accent-text-color);
+  outline-color: var(--accent-text-color);
 }
 
 /* Project section */
@@ -787,7 +785,6 @@ ul {
 .footer-general {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
 }
 
 .logo-footer-color {
@@ -862,11 +859,17 @@ ul {
   fill: var(--alt-text-color);
 }
 
+.footer-subscription {
+  margin-left: 93px;
+}
+
 .footer-subscription .alt-title {
   margin-bottom: 20px;
 }
 
 .footer-input {
+  display: flex;
+  align-items: center;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -875,11 +878,12 @@ ul {
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
   color: var(--footer-contacts-text-color);
   background: transparent;
   padding-left: 18px;
+  transition-property: border-color, outline-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input:-webkit-autofill,
@@ -889,7 +893,10 @@ ul {
   -webkit-box-shadow: 0 0 0px 1000px var(--dark-background-color) inset;
 }
 
-.footer-subscription {
+.footer-input:hover,
+.footer-input:focus {
+  border-color: var(--accent-text-color);
+  outline-color: var(--accent-text-color);
 }
 
 .footer-form {
